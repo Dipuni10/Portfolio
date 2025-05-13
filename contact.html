@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me - Dipuni Sathua</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #1a1a1a;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .contact-container {
+      background: linear-gradient(145deg, #222, #111);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 123, 255, 0.3);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #48aaff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .email-link {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 12px 25px;
+      background-color: #48aaff;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .email-link:hover {
+      background-color: #0077cc;
+    }
+
+    .back-btn {
+      margin-top: 25px;
+      text-decoration: none;
+      color: #999;
+      font-size: 0.9em;
+    }
+
+    .back-btn:hover {
+      color: #48aaff;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .modal-content {
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 400px;
+      width: 80%;
+    }
+
+    .modal a {
+      color: #48aaff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .close-btn {
+      color: #fff;
+      font-size: 24px;
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="contact-container">
+    <h1>Contact Me</h1>
+    <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+    <a href="javascript:void(0);" class="email-link" id="openModal">📧 Mail Me</a>
+    <br />
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="emailModal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Contact Emails</h2>
+      <p>Here are the email addresses:</p>
+      <p><a href="mailto:dipunisathua042gmail@example.com">dipunisathua042gmail@example.com</a></p>
+      <p><a href="mailto:dipunisathua357mail@example.com">dipunisathua357email@example.com</a></p>
+    </div>
+  </div>
+
+  <script>
+    // Get the modal and buttons
+    const modal = document.getElementById("emailModal");
+    const openModal = document.getElementById("openModal");
+    const closeModal = document.getElementById("closeModal");
+
+    // When the user clicks the "Mail Me" link, open the modal
+    openModal.onclick = function() {
+      modal.style.display = "flex";
+    }
+
+    // When the user clicks on the "x" (close) button, close the modal
+    closeModal.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside the modal, close it
+    window.onclick = function(event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
