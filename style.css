@@ -513,3 +513,86 @@ button:nth-child(2):hover {
 .download-btn i {
   margin-right: 8px;
 }
+/* Feedback Form Styles */
+#feedback-form.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker overlay */
+    align-items: center;
+    justify-content: center;
+}
+
+#feedback-form .modal-content {
+    background: #2a2a2a; /* Dark background for the form */
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
+}
+
+#feedback-form h2 {
+    color: #48aaff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#feedback-form label {
+    display: block;
+    margin-top: 10px;
+    color: #d4d4d4; /* Light grey labels */
+    font-size: 0.9em;
+}
+
+#feedback-form input[type="text"],
+#feedback-form input[type="email"],
+#feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background-color: #333333; /* Darker input fields */
+    color: #ffffff; /* White input text */
+    border-radius: 5px;
+}
+
+#feedback-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+#feedback-form button[type="submit"] {
+    background-color: #48aaff; /* Blue submit button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#feedback-form button[type="submit"]:hover {
+    background-color: #007bff; /* Lighter blue on hover */
+}
+
+#feedback-form .close-btn {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#feedback-form .close-btn:hover,
+#feedback-form .close-btn:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
