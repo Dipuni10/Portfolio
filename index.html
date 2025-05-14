@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dipuni's Portfolio</title>
@@ -9,19 +11,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
+
 
 </head>
 
 <body>
     <header>
         <nav class="navbar">
+
+
             <div class="logo">DIPUNI</div>
             <ul class="navlist">
                 <li><a href="#">Home</a></li>
                 <li><a href="#work">WORK</a>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+
+
+
             </ul>
         </nav>
     </header>
@@ -39,16 +46,19 @@
 
             <div class="content">
                 <p class="intro">Hi! I am <span>Dipuni sathua</span></p>
-                <h1>Data scientist</h1>
+                <h1><span id="typed-role"></span></h1>
                 <p class="detail">
                     I am a Web Developer and Data Scientist skilled in building dynamic web apps and analyzing data.
                     I combine coding and analytics to create smart, user-focused digital solutions.
                 </p>
                 <div class="btn-container">
                     <a href="contact.html" target="_blank"><button>Contact</button></a>
+                    <a href="https://drive.google.com/uc?export=download&id=1fMZzbZx7NIoE_ReYOPocSa-lxly5n5gw"
+                        class="download-btn" target="_blank">
+                        <i class="fa-solid fa-download"></i> Resume
+                    </a>
                     <a href="projects.html" target="_blank"><button>View Projects</button></a>
                 </div>
-            </div>
         </section>
 
         <div class="right-container">
@@ -179,44 +189,44 @@
         }
     </style>
     <div class="skills-container">
-    <div class="skills-header">
-        <h2>My Skills</h2>
-    </div>
-    <div class="skill">
-        <div class="skill-title">Data Analysis</div>
-        <div class="progress-bar-container" data-skill-level="90">
-            <div class="progress-bar"></div>
-            <span class="progress-bar-text">85%</span>
+        <div class="skills-header">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Data Analysis</div>
+            <div class="progress-bar-container" data-skill-level="90">
+                <div class="progress-bar"></div>
+                <span class="progress-bar-text">85%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Web develop</div>
+            <div class="progress-bar-container" data-skill-level="80">
+                <div class="progress-bar"></div>
+                <span class="progress-bar-text">95%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">JavaScript</div>
+            <div class="progress-bar-container" data-skill-level="95">
+                <div class="progress-bar"></div>
+                <span class="progress-bar-text">80%</span>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Python</div>
+            <div class="progress-bar-container" data-skill-level="75">
+                <div class="progress-bar"></div>
+                <span class="progress-bar-text">78%</span>
+            </div>
         </div>
     </div>
-    <div class="skill">
-        <div class="skill-title">Web develop</div>
-        <div class="progress-bar-container" data-skill-level="80">
-            <div class="progress-bar"></div>
-            <span class="progress-bar-text">95%</span>
-        </div>
-    </div>
-    <div class="skill">
-        <div class="skill-title">JavaScript</div>
-        <div class="progress-bar-container" data-skill-level="95">
-            <div class="progress-bar"></div>
-            <span class="progress-bar-text">80%</span>
-        </div>
-    </div>
-    <div class="skill">
-        <div class="skill-title">Python</div>
-        <div class="progress-bar-container" data-skill-level="75">
-            <div class="progress-bar"></div>
-            <span class="progress-bar-text">78%</span>
-        </div>
-    </div>
-</div>
 
 
 
 
-<!-- Button to trigger the modal -->
-<button id="feedbackBtn">Leave Feedback</button>
+    <!-- Button to trigger the modal -->
+    <button id="feedbackBtn">Leave Feedback</button>
 
     <!-- Modal Structure -->
     <div id="feedback-form" class="modal">
@@ -239,7 +249,7 @@
     </div>
 
     <!-- JavaScript Code -->
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 

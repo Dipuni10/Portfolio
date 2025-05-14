@@ -64,3 +64,19 @@
             alert("Feedback submitted successfully!");
             modal.style.display = "none"; // Close modal after submission
         };
+new Typed("#typed-role", {
+  strings: ["Data Scientist", "Web Developer", "ML Enthusiast"],
+  typeSpeed: 60,
+  backSpeed: 30,
+  loop: true
+});
+document.getElementById("themeToggle").onclick = function () {
+  document.body.classList.toggle("light-theme");
+};
+ScrollReveal().reveal('.service-card, .about-box, .skill', {
+  distance: '50px',
+  duration: 800,
+  easing: 'ease-out',
+  origin: 'bottom',
+  interval: 200
+});

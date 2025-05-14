@@ -491,3 +491,25 @@ button:nth-child(2):hover {
             margin: 8px 0;
             display: block;
         }
+        .download-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 1.5px solid #5DB9EE;
+  color: #5DB9EE;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.download-btn:hover {
+  background-color: #5DB9EE;
+  color: #262525;
+  box-shadow: 0 0 10px #5DB9EE;
+}
+
+.download-btn i {
+  margin-right: 8px;
+}
